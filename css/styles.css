@@ -36,6 +36,7 @@ header {
   margin-left: 16.67%;
   margin-right: 16.67%;
   width: 1200px;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-blue {
@@ -285,11 +286,10 @@ footer {
 }
 
 .contact-information {
-  margin-left: 200px;
+  margin-left: 16.67%;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
+  padding-left: 0;
   text-align: start;
 }
 
@@ -347,6 +347,27 @@ address {
 .secondary-button-section {
   list-style-type: none;
 }
+
+.container .secondary-button-section {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.secondary-button-item {
+  margin-right: 30px;
+}
+
+.secondary-button-item:last-child {
+  margin-right: 0;
+}
+
 .secondary-button {
   font-family: Roboto;
   font-style: normal;
@@ -356,6 +377,9 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .secondary-button:hover,
@@ -366,6 +390,30 @@ address {
 
 .portfolio-section {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-bottom: 94px;
+  margin-top: 0;
+  justify-content: space-between;
+}
+
+.work-example-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 370px;
+}
+
+.work-example-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.work-example-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .work-example-name {
