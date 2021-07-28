@@ -29,14 +29,16 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .container {
-  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
-  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+}
+
+header > .container {
+  display: flex;
 }
 
 .logo-blue {
@@ -60,10 +62,8 @@ header {
 .section-navigation {
   list-style-type: none;
   display: flex;
-  margin-left: 93px;
+  margin-left: 0;
   justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 32px;
   padding-left: 0px;
 }
 
@@ -79,10 +79,12 @@ header {
 
 .navigation-link-item {
   padding-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation-link-item:first-child {
-  padding-left: 0;
+  padding-left: 93px;
 }
 
 .navigation-link:hover,
@@ -119,9 +121,7 @@ main {
 }
 .section-hero {
   background-color: var(--secondary-background-color);
-  display: flex;
   align-content: center;
-  flex-wrap: wrap;
   padding-top: 200px;
   padding-bottom: 280px;
 }
@@ -136,6 +136,7 @@ main {
   color: var(--secondary-text-color);
   margin: auto;
   width: 646px;
+  margin-bottom: 30px;
 }
 
 .primary-button {
@@ -171,6 +172,7 @@ main {
 .section-advantages {
   list-style-type: none;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .container .section-advantages {
@@ -203,15 +205,16 @@ main {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .section-activity {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
-.container .section-activity {
+.section-activity {
   display: flex;
 }
 
@@ -294,13 +297,8 @@ main {
 
 footer {
   background-color: var(--secondary-background-color);
-}
-
-.contact-information {
-  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
 }
 
 address {
@@ -360,13 +358,11 @@ address {
 .container .secondary-button-section {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .secondary-button-item {
