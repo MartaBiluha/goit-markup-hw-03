@@ -123,7 +123,7 @@ main {
   background-color: var(--secondary-background-color);
   align-content: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -432,7 +432,7 @@ address {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
   margin: 0;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .work-example-specialization {
