@@ -31,14 +31,14 @@ header {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
 }
 
 header > .container {
   display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-blue {
@@ -61,12 +61,19 @@ header > .container {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-navigation {
   list-style-type: none;
   display: flex;
   margin: 0;
   justify-content: space-between;
   padding-left: 0px;
+  margin-left: 93px;
 }
 
 .navigation-link {
@@ -76,7 +83,6 @@ header > .container {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
-  justify-content: space-between;
 }
 
 .navigation-link-item {
@@ -84,7 +90,7 @@ header > .container {
 }
 
 .navigation-link-item:first-child {
-  padding-left: 93px;
+  margin-left: 0;
 }
 
 .navigation-link:hover,
@@ -162,23 +168,12 @@ main {
   color: var(--title-text-color);
 }
 
-.advantage-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .section-advantages {
   list-style-type: none;
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
-}
-
-.container .section-advantages {
   display: flex;
-  width: 1200px;
   justify-content: space-between;
 }
 
@@ -194,7 +189,7 @@ main {
 }
 
 .activity-section {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .activity-title {
@@ -214,8 +209,6 @@ main {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-}
-.section-activity {
   display: flex;
 }
 
@@ -245,8 +238,6 @@ main {
 
 .team-section {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-member {
@@ -258,12 +249,9 @@ main {
   margin-right: 0;
 }
 
-.container .section-team {
+.section-team {
   display: flex;
   justify-content: space-between;
-}
-
-.section-team {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -352,16 +340,9 @@ address {
   color: #2196f3;
 }
 
-.section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .secondary-button-section {
   list-style-type: none;
-}
-
-.container .secondary-button-section {
   display: flex;
   justify-content: center;
   margin-top: 0;
@@ -369,6 +350,7 @@ address {
   padding: 0;
   margin-bottom: 50px;
 }
+
 
 .secondary-button-item {
   margin-right: 8px;
