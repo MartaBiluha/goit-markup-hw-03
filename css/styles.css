@@ -13,6 +13,11 @@
   --secondary-background-color: #2f303a;
 }
 
+h1, h2, h3, h4, li {
+padding: 0;
+margin: 0;
+}
+
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -32,6 +37,7 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+  margin: 0 auto;
 }
 
 header > .container {
@@ -58,8 +64,8 @@ header > .container {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .section {
@@ -127,7 +133,6 @@ main {
 }
 .section-hero {
   background-color: var(--secondary-background-color);
-  align-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -156,7 +161,7 @@ main {
   color: var(--secondary-text-color);
   background-color: #2196f3;
   padding: 10px 32px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .advantage-title {
@@ -231,9 +236,7 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 0;
-  padding-bottom: 50px;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 .team-section {
@@ -241,6 +244,7 @@ main {
 }
 
 .team-member {
+  display: block;
   margin-right: 30px;
   background-color: #ffffff;
 }
@@ -386,7 +390,8 @@ address {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .work-example-item {
@@ -396,7 +401,6 @@ address {
   margin-right: 30px;
   margin-bottom: 30px;
   text-align: start;
-  width: 370px;
 }
 
 .work-example-item:nth-last-child(-n + 3) {
