@@ -29,6 +29,10 @@ body {
   line-height: 1.7;
 }
 
+img {
+  display: block;
+}
+
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
@@ -401,6 +405,7 @@ address {
   margin-right: 30px;
   margin-bottom: 30px;
   text-align: start;
+  flex-basis: calc(100% / 9 - 30px);
 }
 
 .work-example-item:nth-last-child(-n + 3) {
